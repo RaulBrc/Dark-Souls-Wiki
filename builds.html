@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Souls Wiki | Linhagens de Poder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CAMINHOS DO PODER</h1>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-btn">Início</a>
+            <a href="bosses.html" class="nav-btn">Chefes</a>
+            <a href="builds.html" class="nav-btn active">Builds</a>
+            <a href="lore.html" class="nav-btn">Lore</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="buildSearch" placeholder="Busque por estilo (ex: Força, Mago, Sangue)..." onkeyup="filterBuilds()">
+        </div>
+    </header>
+
+<main id="buildList">
+    <h2 class="game-title">Builds: Dark Souls I</h2>
+
+    <div class="build-card" data-type="ds1 força pvp tanque">
+        <div class="content-wrapper">
+            <div class="content-text">
+                <h3>The GiantDad</h3>
+                <p><b>Estilo:</b> A build mais lendária do DS1. Focada em "Stun-lock" e defesa massiva para dominar o PvP de baixo nível.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><b>Vit:</b> 48</div>
+                    <div class="stat-box"><b>End:</b> 66</div>
+                    <div class="stat-box"><b>Str:</b> 16</div>
+                    <div class="stat-box"><b>Dex:</b> 10</div>
+                </div>
+                <p><b>Equipamento:</b> Mask of the Father, Giant Armor Set, Chaos Zweihander +5.</p>
+            </div>
+            <div class="content-img"><img src="img/giantdad.jpg" alt="GiantDad"></div>
+        </div>
+    </div>
+
+    <div class="build-card" data-type="ds1 destreza pve">
+        <div class="content-wrapper">
+            <div class="content-text">
+                <h3>Grande Foice (Dex Hyper-Carry)</h3>
+                <p><b>Estilo:</b> Dano de sangramento e alcance absurdo. Ideal para passar pelo jogo base com facilidade.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><b>Dex:</b> 40</div>
+                    <div class="stat-box"><b>End:</b> 30</div>
+                    <div class="stat-box"><b>Vit:</b> 30</div>
+                </div>
+                <p><b>Equipamento:</b> Great Scythe +15, Grass Crest Shield (nas costas), Dark Wood Grain Ring.</p>
+            </div>
+            <div class="content-img"><img src="img/grande-foice.jpg" alt="Scythe Build"></div>
+        </div>
+    </div>
+
+    <h2 class="game-title">Builds: Dark Souls II</h2>
+
+    <div class="build-card" data-type="ds2 força poder">
+        <div class="content-wrapper">
+            <div class="content-text">
+                <h3>Power Stance Ultra GS</h3>
+                <p><b>Estilo:</b> Brutalidade pura. Usa a mecânica exclusiva do DS2 de empunhar duas armas colossais ao mesmo tempo.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><b>Str:</b> 42</div>
+                    <div class="stat-box"><b>Dex:</b> 15</div>
+                    <div class="stat-box"><b>Vig:</b> 40</div>
+                    <div class="stat-box"><b>Adp:</b> 25</div>
+                </div>
+                <p><b>Equipamento:</b> Duas "Greatsword" (as Ultra Greatswords), Ring of Blades +2.</p>
+            </div>
+            <div class="content-img"><img src="img/power-stance.jpg" alt="Power Stance"></div>
+        </div>
+    </div>
+
+    <div class="build-card" data-type="ds2 hex mago escuridão">
+        <div class="content-wrapper">
+            <div class="content-text">
+                <h3>Hexer (Mago Negro)</h3>
+                <p><b>Estilo:</b> Mestre das Trevas. No DS2, os Hexes são extremamente poderosos, escalando com o menor valor entre Fé e Inteligência.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><b>Int:</b> 30</div>
+                    <div class="stat-box"><b>Fth:</b> 30</div>
+                    <div class="stat-box"><b>Att:</b> 40</div>
+                </div>
+                <p><b>Equipamento:</b> Sunset Staff, Hex: Dark Orb, Hex: Resonant Soul.</p>
+            </div>
+            <div class="content-img"><img src="img/hexer.webp" alt="Hexer Build"></div>
+        </div>
+    </div>
+
+    <h2 class="game-title">Builds: Dark Souls III</h2>
+
+    <div class="build-card" data-type="ds3 destreza pve quebrado">
+        <div class="content-wrapper">
+            <div class="content-text">
+                <h3>Mercenary Twinblades</h3>
+                <p><b>Estilo:</b> Velocidade insana. Provavelmente a build de maior DPS (dano por segundo) do jogo contra chefes.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><b>Dex:</b> 60</div>
+                    <div class="stat-box"><b>End:</b> 35</div>
+                    <div class="stat-box"><b>Vit:</b> 35</div>
+                </div>
+                <p><b>Equipamento:</b> Sellsword Twinblades (Sharp Infusion), Pontiff's Right Eye, Old Wolf Curved Sword (nas costas).</p>
+            </div>
+            <div class="content-img"><img src="img/twinblades.jpg" alt="Twinblades"></div>
+        </div>
+    </div>
+
+    <div class="build-card" data-type="ds3 força cavaleiro">
+        <div class="content-wrapper">
+            <div class="content-text">
+                <h3>Lorde do Trovão (Str/Fth)</h3>
+                <p><b>Estilo:</b> Cavaleiro Pesado. Combina a força bruta com o poder dos raios para destruir defesas.</p>
+                <div class="stats-grid">
+                    <div class="stat-box"><b>Str:</b> 40</div>
+                    <div class="stat-box"><b>Fth:</b> 40</div>
+                    <div class="stat-box"><b>Vig:</b> 35</div>
+                </div>
+                <p><b>Equipamento:</b> Dragonslayer Greataxe ou Lothric Knight GS, Lightning Blade (Miracle).</p>
+            </div>
+            <div class="content-img"><img src="img/str-faith.png" alt="Str/Fth Build"></div>
+        </div>
+    </div>
+</main>
+
+    <script>
+        function filterBuilds() {
+            let input = document.getElementById('buildSearch').value.toLowerCase();
+            let cards = document.getElementsByClassName('build-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let tags = cards[i].getAttribute('data-type');
+                let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                
+                if (title.includes(input) || tags.includes(input)) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <button onclick="backToTop()" id="btnTop" title="Voltar ao Topo">
+    <span class="arrow">↑</span>
+</button>
+
+<script>
+    // Pega o botão
+    var mybutton = document.getElementById("btnTop");
+
+    // Quando o usuário rolar 300px para baixo, o botão aparece
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // Quando clicar, volta para o topo suavemente
+    function backToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>

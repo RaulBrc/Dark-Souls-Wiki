@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Souls Wiki | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DARK SOULS WIKI</h1>
+       <nav class="nav-menu">
+        <a href="index.html" class="nav-btn">
+            Início
+        </a>
+        <a href="bosses.html" class="nav-btn">
+            Chefes
+        </a>
+        <a href="builds.html" class="nav-btn">
+            Builds
+        </a>
+        <a href="lore.html" class="nav-btn">
+            Lore
+        </a>
+    </nav>
+    </header>
+
+    <main class="fade-in">
+        <h2>O Destino das Cinzas</h2>
+        <div class="lore-img-full"> <img src="img/nuno-goncalves-anor-londo-001.jpg" alt="Cover Image"> </div>
+        <p>Explore as categorias acima para encontrar detalhes técnicos e histórias profundas sobre o universo de Dark Souls.</p>
+    </main>
+
+<section class="lore-summary">
+    <h2 class="section-title">A Cronologia do Fogo</h2>
+    
+    <div class="summary-card">
+        <div class="summary-content">
+            <h3>Dark Souls I: Morto-Vivo Escolhido</h3>
+            <p>Tudo começou com a Primeira Chama, que trouxe a disparidade ao mundo. Gwyn, o Lorde da Luz, sacrificou sua própria alma para prolongar a Era do Fogo, cometendo o Pecado Original e amaldiçoando a humanidade com a marca dos Mortos-Vivos.</p>
+            <a href="lore.html#ds1-lore" class="read-more">Ler Crônicas Completas →</a>
+        </div>
+    </div>
+
+    <div class="summary-card">
+        <div class="summary-content">
+            <h3>Dark Souls II: O Portador da Maldição</h3>
+            <p>Eras depois, reinos surgiram e caíram sobre as cinzas de Lordran. Em Drangleic, o Rei Vendrick tentou encontrar uma cura para a maldição, apenas para descobrir que o ciclo de luz e trevas é uma lei inevitável da natureza que apaga as memórias de quem a porta.</p>
+            <a href="lore.html#ds2-lore" class="read-more">Ler Crônicas Completas →</a>
+        </div>
+    </div>
+
+    <div class="summary-card">
+        <div class="summary-content">
+            <h3>Dark Souls III: O Aceso</h3>
+            <p>O mundo está em colapso. As terras convergem para o fim dos tempos. Os Lordes das Cinzas abandonaram seus tronos, e cabe a um Ser Inaceso (Unkindled) decidir se a chama deve ser acesa pela última vez ou se a escuridão finalmente deve reinar.</p>
+            <a href="lore.html#ds3-lore" class="read-more">Ler Crônicas Completas →</a>
+        </div>
+    </div>
+</section>
+
+<button onclick="backToTop()" id="btnTop" title="Voltar ao Topo">
+    <span class="arrow">↑</span>
+</button>
+
+<script>
+    // Pega o botão
+    var mybutton = document.getElementById("btnTop");
+
+    // Quando o usuário rolar 300px para baixo, o botão aparece
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // Quando clicar, volta para o topo suavemente
+    function backToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>

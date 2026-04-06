@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Souls Wiki | Crônicas do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CRÔNICAS DAS ERAS</h1>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-btn">Início</a>
+            <a href="bosses.html" class="nav-btn">Chefes</a>
+            <a href="builds.html" class="nav-btn">Builds</a>
+            <a href="lore.html" class="nav-btn active">Lore</a>
+        </nav>
+    </header>
+
+    <main class="fade-in">
+        <section id="ds1-lore" class="lore-section">
+            <h2>Dark Souls I: Morto-Vivo Escolhido</h2>
+            <div class="lore-img-placeholder">
+                <img src="img/Kiln.webp" alt="A Primeira Chama">
+            </div>
+            <article class="lore-text">
+                <p>Um dia, numa terra reinada por dragões de pedra imortais, foi contemplada em seu subterrâneo por uma chama primordial. Essa chama continha o poder da vida e de 4 almas de Lordes. Essas almas foram divididas entre Nito: Alma dos Mortos; Izalith: Alma das Chamas; Gwyn: Alma da Luz e do Sol; e, por último, o mais poderoso e insignificante, o Pigmeu Furtivo: A Alma da Escuridão.</p>
+                
+                <p>A alma da escuridão tinha um poder inacabável; mesmo que repartida diversas vezes, ainda possuía seu poder primordial. Com isso, o Pigmeu a dividiu com sua espécie, gerando, no meio de tantos deuses, a raça humana. Os três primeiros lordes se uniram a um Dragão descamado chamado Seath, que traiu sua espécie para que os lordes tomassem poder da superfície, ganhando assim o título de Duque do Grande Rei Gwyn.</p>
+                
+                <p>Com o passar das eras, a chama primordial começou a se apagar. Numa tentativa desesperada de acendê-la, Izalith foi consumida por sua própria chama do Caos, Nito sucumbiu ao abismo e o Pigmeu estava desaparecido. Com isso, Gwyn decide lançar uma maldição que impediria todo e qualquer humano de morrer antes de perder seu verdadeiro propósito.</p>
+                
+                <p>Depois de tudo isso, Gwyn sacrificou sua vida para acender a chama mais uma vez e lançou uma profecia onde um morto-vivo (humano) escolhido iria coletar todas as almas de lordes e se sacrificaria pela chama futuramente.</p>
+            </article>
+        </section>
+
+        <hr class="lore-divider">
+
+        <section id="ds2-lore" class="lore-section">
+            <h2>Dark Souls II: O Portador da Maldição</h2>
+            <div class="lore-img-placeholder">
+                <img src="img/drangleic_castle.png" alt="Castelo de Drangleic">
+            </div>
+            <article class="lore-text">
+                <p>Com a maldição dos Mortos-Vivos lançada por Gwyn, um dia um morto-vivo portador da maldição, após tantas vezes tendo perdido seu caminho e suas memórias, decidiu reescrever sua história indo atrás de suas origens. No caminho ao encontro dessas origens, ele encontra uma terra distante, nomeada de Drangleic, oriental em relação à antiga terra de Lordran que possuía os grandes lordes.</p>
+                
+                <p>Drangleic havia sido amaldiçoada pelo abismo e pela ganância. Seu Grande Rei Vendrick fora enganado e persuadido a atacar um de seus reinos vizinhos, o dos Gigantes, o que levou a uma grande guerra com muitas baixas e destruição. Após o fim dessa guerra, o reino em pedaços começou a perder um a um os seus governantes, como o Rei de Ferro, o Duque de Freja, o Rei de Marfim, o Rei Afundado, O Apodrecido e A Pecadora Perdida.</p>
+                
+                <p>Com todas essas perdas, o Rei Vendrick entrou em desespero e viajou para a Cripta dos Mortos-Vivos, onde se escondeu até perder a humanidade e se tornar um vazio (hollow). Nesse contexto, o portador da maldição vai em busca de encontrar a razão pela qual possui essa maldição e, no processo, descobre este reino acabado e uma nova oportunidade de subscrever um ciclo.</p>
+            </article>
+        </section>
+
+        <hr class="lore-divider">
+
+        <section id="ds3-lore" class="lore-section">
+            <h2>Dark Souls III: O Aceso</h2>
+            <div class="lore-img-placeholder">
+                <img src="img/Dark-Souls-3-Lothric-castle.avif" alt="Castelo de Lothric">
+            </div>
+            <article class="lore-text">
+                <p>Eras após os eventos em Drangleic, o mundo encontra-se em seu estágio final de decomposição. A chama está mais fraca do que nunca, e o próprio tempo e espaço estão colapsando, convergindo as terras de antigos lordes para o Reino de Lothric. A profecia do sacrifício humano já não é suficiente, e o sino toca para despertar os antigos Lordes das Cinzas de seus túmulos.</p>
+                
+                <p>Entretanto, os Lordes ressuscitados abandonaram seus tronos, recusando-se a queimar novamente por um ciclo que consideram amaldiçoado. Nesse cenário, surgem os Inacesos (Unkindled) — seres de cinza que falharam em acender a chama no passado e agora têm uma última chance de buscar as cinzas dos lordes fugitivos.</p>
+                
+                <p>A jornada do Inaceso o leva através de um mundo que se tornou um cemitério de eras passadas. O objetivo final é decidir se a chama deve ser mantida por mais um tempo, se deve ser usurpada para dar início a uma era de humanos, ou se a escuridão deve finalmente cair, encerrando o milenar e doloroso ciclo iniciado por Gwyn.</p>
+            </article>
+        </section>
+    </main>
+
+    <button onclick="backToTop()" id="btnTop" title="Voltar ao Topo">
+    <span class="arrow">↑</span>
+</button>
+
+<script>
+    // Pega o botão
+    var mybutton = document.getElementById("btnTop");
+
+    // Quando o usuário rolar 300px para baixo, o botão aparece
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // Quando clicar, volta para o topo suavemente
+    function backToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
