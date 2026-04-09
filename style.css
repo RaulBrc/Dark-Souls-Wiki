@@ -406,3 +406,75 @@ html {
 #btnTop .arrow {
     font-weight: bold;
 }
+
+/* ============================================================
+   SEÇÃO DE FEEDBACK E RODAPÉ
+   ============================================================ */
+
+.feedback-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
+    border-top: 3px solid #d4af37;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.feedback-input, .feedback-textarea {
+    width: 100%;
+    background: #111;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 12px;
+    font-family: 'Lora', serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.feedback-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.feedback-input:focus, .feedback-textarea:focus {
+    border-color: #d4af37;
+    background: #1a1a1a;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+footer {
+    background: rgba(10, 10, 10, 0.98);
+    border-top: 2px double #d4af37;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.quote {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
